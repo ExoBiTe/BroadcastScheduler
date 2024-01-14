@@ -1,0 +1,32 @@
+name: ${project.artifactId}
+main: com.github.exobite.mc.zombifyvillagers.PluginMaster
+version: ${project.version}
+author: ExoBiTe
+website: https://www.spigotmc.org/resources/107370/
+description: This Plugin allows you to set a custom Chance for Villager Zombiefication.
+api-version: 1.17
+depend: [NBTAPI]
+
+commands:
+  ZombifyVillagers:
+    description: ZombifyVillagers Main Command
+    usage: /ZombifyVillagers
+    aliases: zv
+
+permissions:
+  zombifyvillagers.*:
+    default: op
+    description: All Plugin Permissions
+    children:
+      zombifyvillagers.notifyOnUpdate: true
+      zombifyvillagers.cmd.changeInfectionRate: true
+      zombifyvillagers.cmd.reloadConfig: true
+
+  zombifyvillagers.notifyOnUpdate:
+    description: Get a Notification upon Login when an Update is available
+
+  zombifyvillagers.cmd.changeInfectionRate:
+    description: Allows the usage of the /ZombifyVillagers changeInfectionRate Command
+
+  zombifyvillagers.cmd.reloadConfig:
+    description: Allows the usage of the /ZombifyVillagers reloadConfig Command

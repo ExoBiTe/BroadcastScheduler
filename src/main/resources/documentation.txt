@@ -1,0 +1,47 @@
+[CENTER][B][SIZE=5]This Plugin allows you to set the Villager-to-ZombieVillager Conversion Rate, regardless of your world Difficulty.[/SIZE][/B][/CENTER]
+
+
+Normally the World Difficulty determines the Chance of a Conversion from a Villager to a Zombie-Villager when a Villager is killed by a Zombie.
+These are (as of version 1.19.2):
+[I]Easy-Mode: 0%
+Normal-Mode: 50%
+Hard-Mode: 100%[/I]
+([SIZE=3][URL='https://minecraft.fandom.com/wiki/Zombie_Villager#Spawning']wiki[/URL][/SIZE])
+
+[CENTER]With this Plugin you are able to set these Values Globally, without the interference of Minecraft's Difficulty.
+[/CENTER]
+
+[B][SIZE=5]How to Use:[/SIZE][/B]
+First of all [U][B]this Plugin needs [URL='https://www.spigotmc.org/resources/7939/']NBT-API[/URL] Installed[/B][/U] on your Server.
+Without NBT-API this Plugin won't start.
+
+When you've installed NBT-API, simply download ZombifyVillagers and drop it into your plugins Folder.
+
+Once the Server is running you can change set the Infection Rate using the [I]/ZombifyVillagers reloadConfig[/I] Command or you can set the Infection Rate in the [I]config.yml[/I] and use the [I]/ZombifyVillagers reloadConfig[/I] Command, to reload the config.
+
+[CENTER][U]This Plugin does not change the behavior of natural Zombie-Villager spawning!
+[/U][/CENTER]
+[B][SIZE=5]Commands:[/SIZE][/B]
+
+[icode]/ZombifyVillagers[/icode] can always be shortened to [icode]/zv[/icode]
+
+[icode]/ZombifyVillagers reloadConfig[/icode] - Reloads the config.yml File while the Server is running, so there is no need for a reboot when you change something in the config.yml File.
+
+[icode]/ZombifyVillagers changeInfectionRate <rate>[/icode] - Changes the Infection Rate while the Server is running.
+
+
+[SPOILER="Permissions"]
+[icode]zombifyvillagers.*[/icode] - Grants all Plugin Permissions.
+
+[icode]zombifyvillagers.notifyOnUpdate[/icode] - Notifies upon Login when a new Update is released.
+
+[icode]zombifyvillagers.cmd.reloadConfig[/icode] - Access to the /ZombifyVillagers reloadConfig Command
+
+[icode]zombifyvillagers.cmd.changeInfectionRate[/icode] - Access to the /ZombifyVillagers changeInfectionRate Command
+
+[/SPOILER]
+[CENTER][/CENTER]
+
+[CENTER][I]This Plugin collects data using bStats![/I][/CENTER]
+[URL='https://bstats.org/plugin/bukkit/ZombifyVillagers/17400'][IMG]https://bstats.org/signatures/bukkit/ZombifyVillagers.svg[/IMG][/URL]
+[CENTER][B]Don't report Errors or leave Suggestions in the Review Section, instead leave them in the [URL='https://www.spigotmc.org/threads/586031/']Discussions Section[/URL]. I'll be happy to talk to you there![/B][/CENTER]
