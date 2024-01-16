@@ -1,0 +1,44 @@
+{
+  "comment_reference" : "https://minecraft.fandom.com/de/wiki/JSON-Text#Elemente_eines_formatierten_JSON-Textes",
+  "some_other_comments": "Selector Parsing -> Server#selectEntities(CommandSender sender, String selector)",
+
+  "updateCheck": true,
+  "disableMetrics": false,
+
+  "messages": [
+    {
+      "name" : "dummyBroadcast",
+      "permission": "string",
+      "time": [
+        "string",
+        "...",
+        "string"
+      ],
+      "message": [
+        {
+          "text" : "string *",
+
+          "selector": "string *",
+
+          "keybind": "string *",
+
+          "scoreName": "string",
+          "scoreTarget": "string",
+
+          "translation": "string",
+          "with": [
+            "same Object as parent"
+          ],
+
+          "font": "text",
+          "color": "text",
+          "bold": "bool",
+          "italic": "bool",
+          "underlined": "bool",
+          "strikethrough":  "bool",
+          "obfuscated": "bool"
+        }
+      ]
+    }
+  ]
+}

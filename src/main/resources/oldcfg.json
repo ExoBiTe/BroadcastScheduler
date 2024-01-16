@@ -1,0 +1,41 @@
+{
+  "text": "text",
+  "selector": "selector",
+  "keybind": "keybind",
+  "translate": "translate",
+  "with": "text",
+  "fallback": "text",
+  "nbt": "nbtPath",
+  "block": "text(x y z)",
+  "entity": "selector",
+  "storage": "storage",
+  "interpret": "bool",
+  "separator": "char",
+  "score": {
+    "objective": "text",
+    "name": "objective-selector"
+  },
+  "font": "text",
+  "color": "text",
+  "bold": "bool",
+  "italic": "bool",
+  "underlined": "bool",
+  "strikethrough":  "bool",
+  "obfuscated": "bool",
+  "hoverEvent": {
+    "action": "show_text | show_item | show_entity",
+    "contents_text": "text",
+    "contents_item": "id",
+    "contents_entity": {
+      "id": "uuid",
+      "type": "id",
+      "name": "text"
+    }
+  },
+  "clickEvent": {
+    "action": "suggest_command | run_command | open_url",
+    "value": "text"
+  },
+  "insertion": "text",
+  "extra":  []
+}

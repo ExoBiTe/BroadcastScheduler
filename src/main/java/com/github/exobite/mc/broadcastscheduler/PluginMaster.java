@@ -1,5 +1,6 @@
 package com.github.exobite.mc.broadcastscheduler;
 
+import com.github.exobite.mc.broadcastscheduler.command.BroadcastSchedulerCommand;
 import com.github.exobite.mc.broadcastscheduler.utils.Config;
 import com.github.exobite.mc.broadcastscheduler.utils.Utils;
 import com.github.exobite.mc.broadcastscheduler.web.UpdateChecker;
@@ -33,11 +34,10 @@ public class PluginMaster extends JavaPlugin {
         instance = this;
         Utils.registerUtils(this);
         Config.setupConfig(this).loadConfig(false);
-        //getServer().getPluginManager().registerEvents(new EntityDeath(), this);
         //getServer().getPluginManager().registerEvents(new PlayerLogin(), this);
         if(Config.getInstance().checkForUpdate()) UpdateChecker.createUpdateChecker(this, true);
         if(Config.getInstance().allowMetrics()) setupBStats();
-        //getCommand("ZombifyVillagers").setExecutor(new ZombifyVillagersCommand());
+        getCommand("BroadcastScheduler").setExecutor(new BroadcastSchedulerCommand());
         sendConsoleMessage(Level.INFO, "Running (took "+(System.currentTimeMillis()-time1)+"ms)!");
     }
 

@@ -112,6 +112,15 @@ public class Utils {
         return change;
     }
 
+    public static File createFileIfNotExists(String path) {
+        File f = new File(main.getDataFolder()+File.separator+path);
+        if(!f.exists()) {
+            main.saveResource(path, false);
+            return f;
+        }
+        return f.exists() ? f : null;
+    }
+
     public static InputStream getResource(String filename) {
         if (main == null) {
             throw new IllegalArgumentException("Main cannot be null");
